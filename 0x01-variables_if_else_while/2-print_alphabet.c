@@ -8,13 +8,14 @@ int main(void)
 {
 int i;
 char n[27];
-for (i = 0; i < 27; i++)
+for (i = 0; i <= 26; i++)
 {
 n[i] = 'a' + i;
 }
-for (i = 0; i < 27; i++)
+for (i = 0; i <= 26; i++)
 {
 putchar(n[i]);
 }
+putchar('\n');
 return (0);
 }
