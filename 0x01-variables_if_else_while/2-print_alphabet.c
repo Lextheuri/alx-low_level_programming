@@ -1,5 +1,5 @@
 #include <stdio.h>
-/*
+/**
  * main - Entry point
  * Description: print alphabet in lowercase
  * Return: Always 0 (Success)
