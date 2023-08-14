@@ -1,5 +1,5 @@
 #include <stdio.h>
-/*
+/**
  * main - Entry point
  * Description: prints base 10 numbers
  * Return: Always 0 (Success)
