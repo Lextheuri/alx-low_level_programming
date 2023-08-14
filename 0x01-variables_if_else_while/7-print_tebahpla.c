@@ -1,6 +1,5 @@
 #include <stdio.h>
-#include <conio.h>
-/*
+/**
  * main - Entry point
  * Description: prints the lowercase alphabet in reverse
  * Return: Always 0 (Success)
