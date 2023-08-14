@@ -7,13 +7,14 @@
 int main(void)
 {
 int i;
-char n[26];
+char n[27];
 for (i = 0; i <= 26; i++)
 {
 n[i] = 'a' + i;
 }
 for (i = 0; i <= 26; i++)
 {
+n[26] = '\0';
 putchar(n[i]);
 }
 putchar('\n');
