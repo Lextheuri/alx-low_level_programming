@@ -7,7 +7,7 @@
 int main(void)
 {
 int i;
-char n[27];
+char n[26];
 for (i = 0; i <= 26; i++)
 {
 n[i] = 'a' + i;
