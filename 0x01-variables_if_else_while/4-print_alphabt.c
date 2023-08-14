@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-/*
+/**
  * main - Entry point
  * Description: prints alphabet without q and e
  * Return: Always 0 (Success)
