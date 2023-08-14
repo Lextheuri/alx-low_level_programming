@@ -1,6 +1,5 @@
 #include <stdio.h>
-#include <conio.h>
-/*
+/**
  * main - Entry point
  * Description: prints numbers of base 10
  * Return: Always 0 (Success)
