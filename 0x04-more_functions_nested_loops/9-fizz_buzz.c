@@ -4,11 +4,10 @@
  * Description: program to print multiples of 3 Fizz, 5 Buzz and both FizzBuzz
  * Return: (0) success
  */
-
 int main(void)
 {
 int i;
-for ( i = 1; i <= 100; i++)
+for (i = 1; i <= 100; i++)
 {
 if (i % 3 == 0 && i % 5 == 0)
 {
