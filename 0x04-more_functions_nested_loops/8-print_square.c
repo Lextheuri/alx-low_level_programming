@@ -18,7 +18,6 @@ for (i = 0; i < size; i++)
 int j;
 for (j = 0; j < size; j++)
 {
-size = '#';
 _putchar('#');
 }
 _putchar('\n');
