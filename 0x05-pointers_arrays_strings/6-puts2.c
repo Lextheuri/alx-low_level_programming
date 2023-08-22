@@ -1,4 +1,5 @@
 #include "main.h"
+#include <string.h>
 /**
  * puts2 -function prints character of a string, from 1st,and new line.
  * @str: pointer to string
