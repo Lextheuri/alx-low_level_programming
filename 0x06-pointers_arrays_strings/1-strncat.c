@@ -1,10 +1,11 @@
 #include "main.h"
 /**
- * _strncat: function Concatenates at most n characters from src to end of dest
- * using at most n bytes from src
+ * _strncat - Function Concatenates at most n characters
+ * from src to end of dest using at most n bytes from src
  * @dest: input value
  * @src: input value
  * @n: input value
+ * Return: dest
  */
 char *_strncat(char *dest, char *src, int n)
 {
