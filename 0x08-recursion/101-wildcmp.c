@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * wildcmp -  function that compares two strings
+ * wildcmp -  function that compares two strings.
  * @s1: string 1
  * @s2: string 2
  * Return: 1 if the strings is identical, otherwise return 0
