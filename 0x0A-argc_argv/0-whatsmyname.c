@@ -1,12 +1,22 @@
-#include "main.h"
 #include <stdio.h>
 /**
- * whatsmyname - a program that prints its name, followed by a new line
+ * main - a program that prints its name, followed by a new line
+ * @argc: argument count
+ * @argv: argument value
  * Return: (0)
  */
-int main(int argc, char * argv[])
+int main(int argc, char *argv[])
 {
-    printf("%s\n", argv[0]);
-
-    return 0;
+int i;
+(void)argc;
+i = 0;
+while (argv[0][i] != '\0')
+{
+putchar(argv[0][i]);
+i++;
+}
+{
+putchar('\n');
+}
+return (0);
 }
