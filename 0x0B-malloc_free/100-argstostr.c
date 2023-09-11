@@ -9,7 +9,7 @@
  */
 char *argstostr(int ac, char **av)
 {
-int i, index,total_length;
+int i, index, total_length;
 char *concatenated_str;
 if (ac == 0 || av == NULL)
 {
