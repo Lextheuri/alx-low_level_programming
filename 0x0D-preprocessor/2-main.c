@@ -1,4 +1,8 @@
 #include <stdio.h>
+/**
+ * main - outputs file name
+ * Return: (0)
+ */
 int main()
 {
 printf("%s\n", __FILE__);
