@@ -18,19 +18,19 @@ while (*formatPtr)
 if (*formatPtr == 'c')
 {
 c = va_arg(args, int);
-printf("%c", c);
+printf("%c ", c);
 }
 else if
 (*formatPtr == 'i')
 {
 i = va_arg(args, int);
-printf("%d", i);
+printf("%d ", i);
 }
 else if
 (*formatPtr == 'f')
 {
 double d = va_arg(args, double);
-printf("%f", d);
+printf("%f ", d);
 }
 else if
 (*formatPtr == 's')
@@ -38,7 +38,7 @@ else if
 s = va_arg(args, char*);
 if (s != NULL)
 {
-printf("%s", s);
+printf("%s ", s);
 }
 else
 {
