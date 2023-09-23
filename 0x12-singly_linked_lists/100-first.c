@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "lists.h"
 /**
- * before_main_message - function prints text before function is executed.
+ * before_main_message -a function that prints text before function is executed.
  * Return: NULL
  */
 void before_main_message(void)
