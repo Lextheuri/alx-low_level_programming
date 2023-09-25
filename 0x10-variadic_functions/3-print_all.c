@@ -5,48 +5,49 @@
  * print_all - function that prints anything
  * @format: list of types of arguments passed to function
  */
-void print_all(const char* const format, ...)
+void print_all(const char *format, ...)
 {
-int c, i;
-const char *formatPtr;
-char *s;
+const char *sep;
+const char *str;
+int printed;
 va_list args;
 va_start(args, format);
-formatPtr = format;
-while (*formatPtr)
+sep = "";
+printed = 0;
+while (*format)
 {
-if (*formatPtr == 'c')
+switch (*format)
 {
-c = va_arg(args, int);
-printf("%c ", c);
-}
-else if
-(*formatPtr == 'i')
+case 'c':
+printf("%s%c", sep, va_arg(args, int));
+break;
+case 'i':
+printf("%s%d", sep, va_arg(args, int));
+break;
+case 'f':
+printf("%s%f", sep, va_arg(args, double));
+break;
+case 's':
+str = va_arg(args, const char *);
+if (str)
 {
-i = va_arg(args, int);
-printf("%d ", i);
-}
-else if
-(*formatPtr == 'f')
-{
-double d = va_arg(args, double);
-printf("%f ", d);
-}
-else if
-(*formatPtr == 's')
-{
-s = va_arg(args, char*);
-if (s != NULL)
-{
-printf("%s ", s);
+printf("%s%s", sep, str);
 }
 else
 {
-printf("(nil)");
+printf("%s(nil)", sep);
 }
+break;
+default:
+break;
 }
-formatPtr++;
+sep = ", ";
+format++;
+printed++;
 }
 va_end(args);
+if (printed > 0)
+{
 printf("\n");
+}
 }
