@@ -1,33 +1,32 @@
-#include <stdio.h>
+#include "main.h"
 /**
- * is_prime_number - function returns 1 if input int is prime, else return 0
- * @n: input value
- * Return: 1, else 0
+ * is_prime_helper - Recursive helper function to check if a number is prime.
+ * @n: The number to check for primality
+ * @divisor: The current divisor being checked
+ * Return: 1 if n is prime, 0 if not
  */
-int is_prime_number(int n)
+int is_prime_helper(int n, int divisor)
 {
-int i;
 if (n <= 1)
 {
 return (0);
 }
-else if (n <= 3)
+if (divisor * divisor > n)
 {
 return (1);
 }
-else if (n % 2 == 0 || n % 3 == 0)
+if (n % divisor == 0)
 {
 return (0);
 }
-else
-{
-for (i = 5; i * i <= n; i += 6)
-{
-if (n % i == 0 || n % (i + 2) == 0)
-{
-return (0);
+return (is_prime_helper(n, divisor + 1));
 }
-}
-return (1);
-}
+/**
+ * is_prime_number - Function returns 1 if int is prime number, else return 0.
+ * @n: Input number
+ * Return: 1 if input int is a prime number, otherwise return 0
+ */
+int is_prime_number(int n)
+{
+return (is_prime_helper(n, 2));
 }
